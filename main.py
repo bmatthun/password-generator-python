@@ -9,7 +9,7 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-#Eazy Level - Order not randomised:
+
 password = []
 for number in range(1, nr_letters + 1):
     password.append(random.choice(letters))
@@ -22,7 +22,7 @@ for number in range(1, nr_numbers + 1):
 
 print(password)
 
-#Hard Level - Order of characters randomised:
+
 mixed_psw = []
 while len(mixed_psw) != len(password):
     random_index = random.randint(0, len(password) - 1)
